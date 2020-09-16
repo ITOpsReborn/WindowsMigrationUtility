@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>User Interface Overview</Title>
+</HEAD>
+<BODY>
+<h2>User Interface Overview</h2>
+
+<p>On initial launch and your ScanState and/or LoadState syntax is blank it will notify you.  You can select "Yes" to open up WMU's configuration settings. </br></br>
+
+<img src=InitialLaunch.gif></></p>
+
+<h3>WMU Main Form</h3>
+
+<img src=UI.jpg></>
+
+<p>The below is a brief overview of the options you have below.</br></br>
+
+<dl>
+<dt><strong>System Type Information</strong></dt>
+<dd>You can run either a capture or restore on a local or remote system. Local system utilizes all built in file operations and remote systems rely on copying files and invoking commands via PSExec.</dd>
+<dt><strong>Select Your Option</strong></dt>
+<dd>This utility you can either capture or restore user and system information utilizing Microsoft's &reg USMT utility.</dd>
+<dt><strong>USMT Options</strong></dt>
+<dd>You will see if you select the "Restore" option you have the option to specify a "Custom Decryption Key".   This option is for captures that happened outside this utility. For an example you capture the system utilizing Configuration Manager, and for various reasons the restore doesn't work.  You can get the encryption key from the database, and now specify the key inside the text box.  Don't worry about the length the application creates a text file for it and uses the key file to decrypt.</dd>
+<dd>Again if you select the "Restore" option you also have the option to utilize USMT Hard Linking.  If you select this the custom decryption key section is disabled.  There is no need for this option if you are restoring from a hard link capture.</dd>
+<dd>USMT Path; for capture it will be where the USMT folder is created and then *.MIG file is captured to.  For restore this is where the USMT folder is created, for an example "E:\WMU\" or "\\Server\WMU\" and the directory listing has folder inside ".\USMT\USMT.mig".</dd>
+<dt><strong>Log File Locations</strong></dt>
+<dd>The log files for ScanState and LoadState are listed in this area.  The log files are always on the system where the process is being ran on.</dd>
+</dl>
+
+</p>
+
+</BODY>
+</HTML>

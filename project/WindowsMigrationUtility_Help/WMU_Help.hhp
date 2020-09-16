@@ -1,0 +1,23 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=WMU_Help.chm
+Contents file=Table of Contents.hhc
+Default topic=Welcome.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=WIndows Migration Utility (WMU) Help
+
+
+[FILES]
+Welcome.htm
+UserInterfaceOverview.htm
+ConfigurationOverview.htm
+ExternalResources.htm
+Header_WMUUserInterfaceOverview.htm
+TechnicalRefrence.htm
+WMU_Flowchart.htm
+
+[INFOTYPES]
+

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Welcome">
+		<param name="Local" value="Welcome.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="WMU User Interface Overview">
+		<param name="Local" value="Header_WMUUserInterfaceOverview.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="General User Interface Overview">
+			<param name="Local" value="UserInterfaceOverview.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="WMU Configuration Overview">
+			<param name="Local" value="ConfigurationOverview.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="WMU Techincal Refrence">
+		<param name="Local" value="TechnicalRefrence.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Windows Migration Utility Flowchart Walkthrough">
+			<param name="Local" value="WMU_Flowchart.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="External Resources">
+			<param name="Local" value="ExternalResources.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

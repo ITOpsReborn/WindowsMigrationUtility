@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Configuration User Interface Overview</Title>
+</HEAD>
+<BODY>
+<h2>WMU Configuration User Interface Overview</h2>
+
+<p>The WMU application utilizes user settings stored in the user's %APPDATA% folder, i.e. C:\Users\YOURNAME\AppData\Local.  The WMU Configuration Form reads and writes to this XML file. </br></br>
+
+<img src="Configuration.gif"></></br></br>
+
+<dl>
+<dt><strong>USMT Configuration File</strong></dt>
+<dd>The general configuration for ScanState and/or LoadState utility.</dd>
+<dt><strong>USMT Custom Files</strong></dt>
+<dd>This is where you name your custom capture / restore files for USMT, i.e. "MigApp.xml", "MigUser.xml". </dd>
+<dt><strong>Capture - Before Process Command</strong></dt>
+<dd>Many times in organizations a command needs to run before the ScanState.exe is launched so certain settings are captured and moved to the new OS.  Place the script inside the ".\Source\Config\".  This will make sure this script gets copied to any remote system you need this to be ran on. </dd>
+<dd><img src="CaptureBeforeProcess.gif"></></dd>
+<dt><strong>Restore - After Process Command</strong></dt>
+<dd>Many times in organizations a command needs to be ran after the LoadState.exe is completed.  Place the script inside the ".\Source\Config" folder. This will make sure this script gets copied to any remote system you need this to be ran on.</dd>
+<dd><img src="RestoreAfterProcess.gif"></></dd>
+<dt><strong>ScanState Syntax</strong></dt>
+<dd>For more information on the syntax of ScanState please visit Microsoft's &reg TechNet website; <a href="http://technet.microsoft.com/en-us/library/hh825093.aspx">here</a></dd>
+<dt><strong>LoadState Syntax</strong></dt>
+<dd>For more information ont he syntax of LoadState please visit Microsoft's &reg TechNet website; <a href="http://technet.microsoft.com/en-us/library/hh825190.aspx">here</a></dd>
+
+</BODY>
+</HTML>
+
+
