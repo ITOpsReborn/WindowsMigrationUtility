@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+	<component type="Documents" context="System">
+		<displayName>Ascent Solutions Standard USMT Customization for Local Harddisk Exclusion</displayName>
+			<role role="Data">
+				<rules>
+					<unconditionalExclude>
+						<objectSet>
+							<!-- Only Including C: Drive -->
+							<pattern type="File">A:\*[*]</pattern>
+							<pattern type="File">B:\*[*]</pattern>
+							<pattern type="File">D:\*[*]</pattern>
+							<pattern type="File">E:\*[*]</pattern>
+							<pattern type="File">F:\*[*]</pattern>
+							<pattern type="File">G:\*[*]</pattern>
+							<pattern type="File">H:\*[*]</pattern>
+							<pattern type="File">I:\*[*]</pattern>
+							<pattern type="File">J:\*[*]</pattern>
+							<pattern type="File">K:\*[*]</pattern>
+							<pattern type="File">L:\*[*]</pattern>
+							<pattern type="File">M:\*[*]</pattern>
+							<pattern type="File">N:\*[*]</pattern>
+							<pattern type="File">O:\*[*]</pattern>
+							<pattern type="File">P:\*[*]</pattern>
+							<pattern type="File">Q:\*[*]</pattern>
+							<pattern type="File">R:\*[*]</pattern>
+							<pattern type="File">S:\*[*]</pattern>
+							<pattern type="File">T:\*[*]</pattern>
+							<pattern type="File">U:\*[*]</pattern>
+							<pattern type="File">V:\*[*]</pattern>
+							<pattern type="File">W:\*[*]</pattern>
+							<pattern type="File">X:\*[*]</pattern>
+							<pattern type="File">Y:\*[*]</pattern>
+							<pattern type="File">Z:\*[*]</pattern>
+						</objectSet>
+					</unconditionalExclude>
+				</rules>
+			</role>
+	</component>
+	<component type="Documents" context="System">
+		<displayName>Ascent Solutions Standard USMT Customization for Excluding Common Directories</displayName>
+			<role role="Data">
+				<rules>
+					<unconditionalExclude>
+						<objectSet>
+							<!-- Excluding Common Directories -->
+							<pattern type="File">C:\Users\*\Downloads\*[*]</pattern>
+							<pattern type="File">C:\Windows\*[*]</pattern>
+							<pattern type="File">C:\_SMSTaskSequence\*[*]</pattern>
+							<pattern type="File">C:\Dell\*[*]</pattern>
+							<pattern type="File">C:\Setup\*[*]</pattern>
+							<pattern type="File">C:\SWSetup\*[*]</pattern>
+							<pattern type="File">C:\Intel\*[*]</pattern>
+						</objectSet>
+					</unconditionalExclude>
+				</rules>
+			</role>
+	</component>
+	<component type="Documents" context="System">
+		<displayName>Ascent Solutions Standard USMT Customization for Excluding User Wallpapers and Themes</displayName>
+			<role role="Data">
+				<rules>
+					<unconditionalExclude>
+						<objectSet>
+							<!-- Excluding Wallpapers and Themes -->
+							<pattern type="Registry">HKCU\Control Panel\Appearance\* [*]</pattern>
+							<pattern type="Registry">HKCU\Control Panel\Desktop [Pattern]</pattern>
+							<pattern type="Registry">HKCU\Control Panel\Desktop [SCRNSAVE.EXE]</pattern>
+							<pattern type="Registry">HKCU\Control Panel\Desktop [TileWallpaper]</pattern>
+							<pattern type="Registry">HKCU\Control Panel\Desktop [WallPaper]</pattern>
+							<pattern type="Registry">HKCU\Control Panel\Desktop [WallPaperStyle]</pattern>
+							<pattern type="Registry">HKCU\Control Panel\Desktop\Colors [*]</pattern>
+							<pattern type="Registry">HKCU\Control Panel\Desktop\WindowMetrics [*]</pattern>
+							<pattern type="Registry">HKCU\Software\Microsoft\Internet Explorer\Desktop\General [WallpaperSource]</pattern>
+							<pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers\* [*]</pattern>
+							<pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\ThemeManager\* [*]</pattern>
+							<pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\* [*]</pattern>
+							<pattern type="File">%CSIDL_LOCAL_APPDATA%\Microsoft\Windows\Themes\* [*]</pattern>
+							<pattern type="File">%CSIDL_APPDATA%\Microsoft\Windows\Themes\* [*]</pattern>
+						</objectSet>
+					</unconditionalExclude>
+				</rules>
+			</role>
+	</component>
+	<component type="Documents" context="System">
+		<displayName>Ascent Solutions USMT Migration for Google Chrome</displayName>
+			<role role="Data">
+				<rules>
+					<include>
+						<objectSet>
+							<pattern type="File">%CSIDL_APPDATA%\Google\Chrome\User Data\* [*]</pattern>
+							<pattern type="Registry">HKCU\Software\Google\Chrome\* [*]</pattern>
+						</objectSet>
+					</include>
+				</rules>
+			</role>
+	</component>
+</migration>
